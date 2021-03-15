@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.arkhodler.com</id>
+    <title>EGod</title>
+    <updated>2021-03-15T03:13:30.826Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.arkhodler.com"/>
+    <link rel="self" href="https://blog.arkhodler.com/atom.xml"/>
+    <subtitle>流水当歌醉，落叶亦芳菲</subtitle>
+    <logo>https://blog.arkhodler.com/images/avatar.png</logo>
+    <icon>https://blog.arkhodler.com/favicon.ico</icon>
+    <rights>All rights reserved 2021, EGod</rights>
+    <entry>
+        <title type="html"><![CDATA[投资]]></title>
+        <id>https://blog.arkhodler.com/post/tou-zi/</id>
+        <link href="https://blog.arkhodler.com/post/tou-zi/">
+        </link>
+        <updated>2021-03-11T12:13:52.000Z</updated>
+        <content type="html"><![CDATA[<p>要花的钱：10%<br>
+保命的钱：20% 类似保险<br>
+保值的钱：40%</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[投资实录]]></title>
+        <id>https://blog.arkhodler.com/post/tou-zi-shi-lu/</id>
+        <link href="https://blog.arkhodler.com/post/tou-zi-shi-lu/">
+        </link>
+        <updated>2021-03-10T03:49:31.000Z</updated>
+        <content type="html"><![CDATA[<p>最近股票市场大跌，从这次大跌中学到了什么呢？</p>
+<ol>
+<li>暴跌往往伴随着暴涨，但暴涨并不意味着反转。</li>
+<li>刚开始暴跌的时候减扛杆是有必要的，当然如果已经连续暴跌很久再减就需要考虑了。</li>
+<li>好票子连续暴跌的时候是可以适当加仓的。</li>
+<li>暴跌的时候优先卖出确定性不高（市场情绪）的票子，后续换成确定性高的票子。</li>
+<li>正股吃大趋势的钱，期权吃市场情绪的钱。</li>
+<li>投资的钱是你可以承受的钱，如果一时的涨跌影响到你的生活或幸福感，那么放弃投资吧。</li>
+<li>通货膨胀是用来抵御普通家庭积累财富的，如果普通人就可以随意抵抗通胀，还会认真劳动生产吗？</li>
+<li>当暴涨、暴跌微博连续热搜的时候，或许是卖出、买入的好机会。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[学习 Go (-)]]></title>
+        <id>https://blog.arkhodler.com/post/phper-xue-xi-go-/</id>
+        <link href="https://blog.arkhodler.com/post/phper-xue-xi-go-/">
+        </link>
+        <updated>2021-03-08T12:51:30.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="声明">声明</h2>
+<p>var 声明语句可以创建一个特定类型的变量，然后给变量附加一个名字，并且设置变量的初始值。变量声明的一般语法如下：</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="声明">声明</h2>
+<p>var 声明语句可以创建一个特定类型的变量，然后给变量附加一个名字，并且设置变量的初始值。变量声明的一般语法如下：</p>
+<!-- more -->
+<pre><code>var 变量名字 类型 = 表达式
+</code></pre>
+<h3 id="简短声明变量">简短声明变量</h3>
+<p>在函数内部，有一种称为简短变量声明语句的形式可用于声明和初始化局部变量。它以“名字 := 表达式”形式声明变量，变量的类型根据表达式来自动推导，请记住“:=”是一个变量声明语句，而“=”是一个变量赋值操作。<br>
+因为简洁和灵活的特点，简短变量声明被广泛用于大部分的局部变量的声明和初始化。var 形式的声明语句往往是用于需要显式指定变量类型的地方，或者因为变量稍后会被重新赋值而初始值无关紧要的地方。</p>
+<pre><code>i := 100                  
+var boiling float64 = 100 
+var names []string
+var err error
+var p Point
+i, j := 0, 1
+</code></pre>
+<p>简短变量声明语句中必须至少要声明一个新的变量，下面的代码将不能编译通过：</p>
+<pre><code>f, err := os.Open(infile)
+f, err := os.Create(outfile) // compile error: no new variables
+</code></pre>
+<p>简短变量声明语句只有对已经在同级词法域声明过的变量才和赋值操作语句等价，如果变量是在外部词法域声明的，那么简短变量声明语句将会在当前词法域重新声明一个新的变量。</p>
+<h3 id="指针">指针</h3>
+<p>一个变量对应一个保存了该变量对应类型值的内存存储空间，而指针就是指向对应类型变量的内存地址。<br>
+如果用 <code>var x int</code> 声明语句声明一个 x 变量，那么 &amp;x 表达式（取x变量的内存地址）将产生一个指向该整数变量的指针，指针对应的数据类型是 *int，被称之为“指向int类型的指针”。如果指针名字为 p，那么可以说 “p 指针指向变量 x”，或者说 “p 指针保存了 x 变量的内存地址”。同时 *p 表达式对应 p 指针指向的变量的值。一般 *p 表达式读取指针指向的变量的值，这里为 int 类型的值，同时因为 *p 对应一个变量，所以该表达式也可以出现在赋值语句的左边，表示更新指针所指向的变量的值。</p>
+<pre><code>x := 1
+p := &amp;x         // p, of type *int, points to x
+fmt.Println(*p) // &quot;1&quot;
+*p = 2          // equivalent to x = 2
+fmt.Println(x)  // &quot;2&quot;
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://blog.arkhodler.com/post/hello-gridea/</id>
+        <link href="https://blog.arkhodler.com/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>

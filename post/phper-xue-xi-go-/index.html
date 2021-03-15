@@ -1,0 +1,237 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>学习 Go (-) | EGod</title>
+<link rel="shortcut icon" href="https://blog.arkhodler.com/favicon.ico?v=1615778007492">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://blog.arkhodler.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="学习 Go (-) | EGod - Atom Feed" href="https://blog.arkhodler.com/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="声明
+var 声明语句可以创建一个特定类型的变量，然后给变量附加一个名字，并且设置变量的初始值。变量声明的一般语法如下：
+
+var 变量名字 类型 = 表达式
+
+简短声明变量
+在函数内部，有一种称为简短变量声明语句的形式可用于声明和初始化局..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://blog.arkhodler.com">
+  <img class="avatar" src="https://blog.arkhodler.com/images/avatar.png?v=1615778007492" alt="">
+  </a>
+  <h1 class="site-title">
+    EGod
+  </h1>
+  <p class="site-description">
+    流水当歌醉，落叶亦芳菲
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              学习 Go (-)
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-08
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="声明">声明</h2>
+<p>var 声明语句可以创建一个特定类型的变量，然后给变量附加一个名字，并且设置变量的初始值。变量声明的一般语法如下：</p>
+<!-- more -->
+<pre><code>var 变量名字 类型 = 表达式
+</code></pre>
+<h3 id="简短声明变量">简短声明变量</h3>
+<p>在函数内部，有一种称为简短变量声明语句的形式可用于声明和初始化局部变量。它以“名字 := 表达式”形式声明变量，变量的类型根据表达式来自动推导，请记住“:=”是一个变量声明语句，而“=”是一个变量赋值操作。<br>
+因为简洁和灵活的特点，简短变量声明被广泛用于大部分的局部变量的声明和初始化。var 形式的声明语句往往是用于需要显式指定变量类型的地方，或者因为变量稍后会被重新赋值而初始值无关紧要的地方。</p>
+<pre><code>i := 100                  
+var boiling float64 = 100 
+var names []string
+var err error
+var p Point
+i, j := 0, 1
+</code></pre>
+<p>简短变量声明语句中必须至少要声明一个新的变量，下面的代码将不能编译通过：</p>
+<pre><code>f, err := os.Open(infile)
+f, err := os.Create(outfile) // compile error: no new variables
+</code></pre>
+<p>简短变量声明语句只有对已经在同级词法域声明过的变量才和赋值操作语句等价，如果变量是在外部词法域声明的，那么简短变量声明语句将会在当前词法域重新声明一个新的变量。</p>
+<h3 id="指针">指针</h3>
+<p>一个变量对应一个保存了该变量对应类型值的内存存储空间，而指针就是指向对应类型变量的内存地址。<br>
+如果用 <code>var x int</code> 声明语句声明一个 x 变量，那么 &amp;x 表达式（取x变量的内存地址）将产生一个指向该整数变量的指针，指针对应的数据类型是 *int，被称之为“指向int类型的指针”。如果指针名字为 p，那么可以说 “p 指针指向变量 x”，或者说 “p 指针保存了 x 变量的内存地址”。同时 *p 表达式对应 p 指针指向的变量的值。一般 *p 表达式读取指针指向的变量的值，这里为 int 类型的值，同时因为 *p 对应一个变量，所以该表达式也可以出现在赋值语句的左边，表示更新指针所指向的变量的值。</p>
+<pre><code>x := 1
+p := &amp;x         // p, of type *int, points to x
+fmt.Println(*p) // &quot;1&quot;
+*p = 2          // equivalent to x = 2
+fmt.Println(x)  // &quot;2&quot;
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%A3%B0%E6%98%8E">声明</a>
+<ul>
+<li><a href="#%E7%AE%80%E7%9F%AD%E5%A3%B0%E6%98%8E%E5%8F%98%E9%87%8F">简短声明变量</a></li>
+<li><a href="#%E6%8C%87%E9%92%88">指针</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://blog.arkhodler.com/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '133bb40a622401e57e46',
+    clientSecret: 'da7fd200d261c45775dfb88f6d6e14911ad1fbea',
+    repo: 'stoneworld.github.io',
+    owner: 'stoneworld',
+    admin: ['stoneworld'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered By <span style = "margin-left:5px"><a href="https://github.com/getgridea/gridea" target="_blank"> Gridea</a></span>
+  <a class="rss" href="https://blog.arkhodler.com/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
