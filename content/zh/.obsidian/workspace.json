@@ -8,23 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8e29d6c3ff5a7996",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "b7ee2b00c8890548",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "posts/develop/Go/Go interface.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/develop/Go/Go interface.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/develop/Go/Go interface.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/develop/Go/Go interface.md"
+              }
             }
           }
         ]
@@ -147,10 +146,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "384b008e0cb12381",
+  "active": "b7ee2b00c8890548",
   "lastOpenFiles": [
+    "posts/develop/Go/Go interface.md",
+    "未命名.md",
     "posts/develop/未命名.md",
-    "posts/develop/Go interface.md",
     "posts/有关 Solidity abi 的一切.md",
     "posts/header-image/index.md",
     "posts/header-image/header.jpg"
