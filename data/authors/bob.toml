@@ -1,13 +1,10 @@
-url = "https://example.com"
+url = "https://github.com/stoneworld"
 
 [name]
-display = "Bob"
+display = "stoneworld"
 
 [image]
 # url = ""
 
-[zh-tw]
-description = "自我簡介。"
-
-[en]
-description = "Self introduction."
+[zh]
+description = ""

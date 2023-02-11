@@ -140,14 +140,4 @@ defaultContentLanguageInSubdir = true
     name = " GitHub"
     weight = 10
     identifier = "github"
-    url = "https://github.com/pseudoyu"
-  [[languages.zh.menu.links]]
-    name = "Yu's Services"
-    weight = 20
-    identifier = "services-status"
-    url = "https://uptime.pseudoyu.com/status/services"
-  [[languages.zh.menu.links]]
-    name = "M1sty's Blog"
-    weight = 30
-    identifier = "m1sty"
-    url = "https://www.m1sty.com/"
+    url = "https://github.com/stoneworld"

@@ -4,9 +4,7 @@ date: 2018-03-03T16:01:23+08:00
 lastmod: 2018-03-03T16:01:23+08:00
 draft: false
 tags: ["blockchain","Solidity"]
-categories: ["编程"]
-authors:
-- bob
+categories: ["develop"]
 ---
 
 
@@ -16,7 +14,7 @@ authors:
 
 智能合约一旦部署在网络上，它的字节码会与地址关联起来，并存储在区块链上。更准确地说，智能合约的字节码存储在智能合约地址的“code”字段下的全局世界状态中，智能合约不能主动发起调用，只能被动等待调用，这里我们可以用 Javascript 获取下 `UniswapV3Factory` 智能合约（[Deployment Addresses | Uniswap](https://docs.uniswap.org/contracts/v3/reference/deployments)）的字节码：
 
-```
+```js
 const Web3 = require("web3");
 const provider = "YOUR_INFURA_OR_QUICKNODE_HTTP_ENDPOINT";  
 const web3 = new Web3(provider);
@@ -252,7 +250,7 @@ Json 如下：
 
 Solidity 内置函数 `abi.encode` 允许将任何 Solidity 类型编码为原始字节，EVM 可以直接解释这些原始字节，调用例子如下：
 
-```
+```js
 abi.encode("Solidity")
 
 // 返回值如下：
@@ -281,7 +279,7 @@ Solidity 通过内置函数 `abi.encodePacked(...)` 为数据提供了一种�
 
 同样的，这里的例子如下：
 
-```
+```js
 abi.encode("Solidity")  
 > 0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004536f6c6964697479000000000000000000000000000000000000000000000000
 
@@ -306,13 +304,13 @@ abi.encodeWithSelector(bytes4 selector, ...) returns (bytes memory)
 -  您可以直接引用 `interface` 的函数选择器，类似  `IERC20.transfer.selector`
 -  您可以从其签名字符串生成 bytes4 散列，语法如下：
 
-```
+```js
 bytes4 selector = bytes4(keccak256("transfer(address,uint256)"));
 ```
 
 当然也可以直接直接调用 `abi.encodeWithSignature` 如下：
 
-```
+```js
 abi.encodeWithSignature("transfer(address,uint256)", to, amount); 
 abi.encodeWithSignature(string memory signature, ...) returns (bytes memory)
 等价于
@@ -321,7 +319,7 @@ abi.encodeWithSelector(bytes4(keccak256(bytes(signature))), ...)
 
 也可以看下下 [UniswapV2Pair](https://github.com/Uniswap/v2-core/blob/4dd59067c76dea4a0e8e4bfdda41877a6b16dedc/contracts/UniswapV2Pair.sol#L16) 的合约：
 
-```
+```js
 bytes4 private constant SELECTOR = bytes4(keccak256(bytes('transfer(address,uint256)')));
 
 function _safeTransfer(address token, address to, uint value) private {
