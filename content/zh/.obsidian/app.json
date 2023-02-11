@@ -1,5 +1,5 @@
 {
   "newFileLocation": "current",
-  "attachmentFolderPath": "./attachments",
+  "attachmentFolderPath": "../../static/images",
   "useMarkdownLinks": true
 }
