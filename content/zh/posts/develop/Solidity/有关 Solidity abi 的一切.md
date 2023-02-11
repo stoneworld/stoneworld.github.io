@@ -330,8 +330,8 @@ function _safeTransfer(address token, address to, uint value) private {
 
 ## 将 Solidity 映射到 ABI 类型
 
-Solidity 中可用的大多数基本类型都是 ABI 规范的一部分。这包括 `address` 、 `bytes32` 等，但是，某些特定的 Solidity 类型在 ABI 中没有直接对应项。然后将这些转换为 ABI 中定义的类型。
-
+Solidity 中可用的大多数基本类型都是 ABI 规范的一部分。这包括 `address` 、 `bytes32` 等，但是，某些特定的 Solidity 类型在 ABI 中没有直接对应项。然后将这些转换为 ABI 中定义的类型。sss
+![](./attachments/Pasted%20image%2020230211202732.png)
 简而言之，类型 `address payable` 或 `contract` 的变量将作为标准 `address` 由 ABI 在幕后编码/解码，类似 `struct`，ABI 将 `struct` 编码为基本类型的元组，自 Solidity 版本  `>0.8.0` 以来，这一点已发生变化，因为 `enum` 的成员数不能超过 256 个。
 
 
