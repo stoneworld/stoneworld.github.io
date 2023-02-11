@@ -331,7 +331,8 @@ function _safeTransfer(address token, address to, uint value) private {
 ## 将 Solidity 映射到 ABI 类型
 
 Solidity 中可用的大多数基本类型都是 ABI 规范的一部分。这包括 `address` 、 `bytes32` 等，但是，某些特定的 Solidity 类型在 ABI 中没有直接对应项。然后将这些转换为 ABI 中定义的类型。
-![demo](/image1.jpg)
+![](Pasted%20image%2020230211211226.png)
+![demo](/images/background.jpg)
 
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*f4jYe6T6VSXPYruhjssL2w.png)
 

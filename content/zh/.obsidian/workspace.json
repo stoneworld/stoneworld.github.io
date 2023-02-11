@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f227a8a2a8e51040",
+        "id": "1ba47f9ee6f4e85e",
         "type": "tabs",
         "children": [
           {
-            "id": "736fda3372f29abf",
+            "id": "bb5f6b80aab576e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+                "file": "posts/go.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+                "file": "posts/go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+                "file": "posts/go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md"
+                "file": "posts/go.md"
               }
             }
           }
@@ -146,16 +146,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "736fda3372f29abf",
+  "active": "bb5f6b80aab576e7",
   "lastOpenFiles": [
-    "posts/develop/Solidity/attachments/Pasted image 20230211202732.png",
     "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+    "Pasted image 20230211211148.png",
+    "posts/develop/Go/Go_interface.md",
+    "posts/go.md",
+    "images/background.jpg.md",
+    "posts/develop/Solidity/attachments/Pasted image 20230211202732.png",
     "posts/header-image/index.md",
     "posts/header-image/header.jpg",
     "posts/Pasted image 20230208201822.png.md",
-    "about.md",
-    "posts/develop/Go/Go_interface.md",
-    "未命名.md",
-    "posts/develop/未命名.md"
+    "about.md"
   ]
 }
