@@ -59,7 +59,7 @@ defaultContentLanguageInSubdir = true
   # site info (optional)
   keywords = ["hugo","blockchain","programming"]
   description = "Blockchain | Programming | Photography | Go"
-  logoTitle = "stoneworld" # shown on top-left, default: title
+  logoTitle = "Stoneworld" # shown on top-left, default: title
   siteLogoImage = "images/globe.svg"     # shown besides logoTitle
   # headerTitle = "stoneworld"                   # default: title
   headerImage = "images/background.webp"
@@ -136,6 +136,11 @@ defaultContentLanguageInSubdir = true
     weight = 30
     identifier = "develop"
     url = "category/develop/"
+  [[languages.zh.menu.main]]
+    name = "赞赏"
+    weight = 30
+    identifier = "sponsor"
+    url = "https://sponsor.cat/0xc077cdF746717F3E576E91809e72fD106afF5E52"
   [[languages.zh.menu.links]]
     name = " GitHub"
     weight = 10

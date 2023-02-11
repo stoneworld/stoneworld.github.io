@@ -20,7 +20,11 @@ code, kbd, pre, samp {
     font-family:monaco;
     font-size:14px
 }
-
+.header-logo {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: none;
+}
 /*关于页面图片链接*/
 
 .content img {
