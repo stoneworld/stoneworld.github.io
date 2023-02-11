@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/有关 Solidity abi 的一切.md",
+                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/有关 Solidity abi 的一切.md",
+                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/有关 Solidity abi 的一切.md",
+                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/有关 Solidity abi 的一切.md"
+                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "736fda3372f29abf",
   "lastOpenFiles": [
     "posts/Pasted image 20230208201822.png.md",
-    "posts/有关 Solidity abi 的一切.md",
+    "posts/develop/Solidity/有关 Solidity abi 的一切.md",
     "about.md",
     "posts/develop/Go/Go_interface.md",
     "未命名.md",
