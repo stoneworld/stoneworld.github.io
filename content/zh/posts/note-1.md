@@ -1,5 +1,5 @@
 ---
-title: "筆記 1"
+title: "有关 Solidity abi 的一切"
 date: 2018-03-03T16:01:23+08:00
 lastmod: 2018-03-03T16:01:23+08:00
 draft: false
@@ -8,9 +8,6 @@ categories: ["编程"]
 authors:
 - bob
 ---
-
-```toc
-```
 
 
 ## 智能合约 ABI（Application Binary Interface）[all about ABI](https://coinsbench.com/solidity-tutorial-all-about-abi-46da8b517e7)
