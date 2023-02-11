@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/develop/Go/Go interface.md",
+                "file": "posts/develop/Go/Go_interface.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/develop/Go/Go interface.md",
+                "file": "posts/develop/Go/Go_interface.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/develop/Go/Go interface.md",
+                "file": "posts/develop/Go/Go_interface.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/develop/Go/Go interface.md"
+                "file": "posts/develop/Go/Go_interface.md"
               }
             }
           }
@@ -146,9 +146,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b7ee2b00c8890548",
+  "active": "384b008e0cb12381",
   "lastOpenFiles": [
-    "posts/develop/Go/Go interface.md",
+    "posts/develop/Go/Go_interface.md",
     "未命名.md",
     "posts/develop/未命名.md",
     "posts/有关 Solidity abi 的一切.md",
