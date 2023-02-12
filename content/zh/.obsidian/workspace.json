@@ -14,8 +14,21 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "ca8fd1ca21d1d012",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/develop/Solidity/all-about-array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -65,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "db209fa70cf1d44b",
@@ -81,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/develop/Solidity/all-about-array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/develop/Solidity/all-about-array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/develop/Solidity/all-about-array.md"
+              }
             }
           }
         ]
@@ -138,17 +155,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "384b008e0cb12381",
+  "active": "ca8fd1ca21d1d012",
   "lastOpenFiles": [
+    "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+    "posts/develop/Solidity/all-about-array.md",
     "images/globe.svg",
     "images/background.webp",
-    "posts/develop/Solidity/有关 Solidity abi 的一切.md",
     "posts/go.md",
     "Pasted image 20230211211226.png",
     "images/Pasted image 20230211211759.png",
     "Pasted image 20230211211148.png",
     "posts/develop/Go/Go_interface.md",
-    "images/background.jpg.md",
-    "posts/develop/Solidity/attachments/Pasted image 20230211202732.png"
+    "images/background.jpg.md"
   ]
 }
