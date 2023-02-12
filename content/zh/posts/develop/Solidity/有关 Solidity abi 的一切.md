@@ -1,7 +1,7 @@
 ---
 title: "有关 Solidity abi 的一切"
-date: 2018-03-03T16:01:23+08:00
-lastmod: 2018-03-03T16:01:23+08:00
+date: 2023-02-03T16:01:23+08:00
+lastmod: 2023-02-03T16:01:23+08:00
 draft: false
 tags: ["blockchain","Solidity"]
 categories: ["develop"]

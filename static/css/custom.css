@@ -43,7 +43,10 @@ code, kbd, pre, samp {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 dl,
 ol,
 ul {
