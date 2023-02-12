@@ -45,7 +45,10 @@ T[][K] 或 T[k][] // 二维 混合长度
 
 1. 针对固定长度： string[4] players_room
 2. 针对动态长度：sring[] have_voted
-3. 二维数组：string[2]\[] crypto_names
-4. 二维数组：string[]\[6] names_A_to_F
+3. 二维数组1：string[2]\[] crypto_names
+4. 二维数组2：string[]\[6] names_A_to_F
 
-它和其他语言不同，类似 string[2]\[] 这里的 2 指的是 固定大小为 2 的数组，这一点和其他语言是不一致的。
+它和其他语言不同，类似 string[2]\[] 这里的 2 指的是 固定大小为 2 的数组，这一点和其他语言是不一致的，这里可以把前面的 string[2] 看成一个类型，表示后面的数组是包含两个 string 的数组类型。
+
+对于固定长度的数组是没有 .push 方法的，这一点也需要注意。
+
