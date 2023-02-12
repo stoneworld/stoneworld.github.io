@@ -104,9 +104,37 @@ function memoryArray(uint len) {
 
 > 我们不能通过为成员 `.length` 赋值来更改内存数组的大小，当尝试访问当前长度之外的元素时，这不会自动扩容。一旦创建，内存数组的大小是固定的（但是是动态的，因为它取决于运行时参数）。
 
+数组也可以作为函数的返回值，示例如下：
+
+```js
+// 返回一个固定大小的数组
+function returnOneDigitNumbers() public pure returns (uint[9] memory) {  
+	return [uint(1), 2, 3, 4, 5, 6, 7, 8, 9];  
+}
+
+
+address[] cryptographer_addresses;  
+  
+function addCryptographerAddress(address _address) public {  
+	cryptographer_addresses.push(_address);  
+}  
+  
+function getAllCryptographersAddresses() public view returns (address[] memory) {  
+	return cryptographer_addresses;  
+}
+
+```
+
 
 ## 数组的成员函数
 
 1. .length：返回数组中包含的元素数，固定长度以及内存数组不会发生改变。
-2. .push 在动态数组末尾追加一个新元素，并发挥数组的新ch
+2. .push 在动态数组末尾追加一个新元素，并发挥数组的新长度.
+3. .pop 移除动态数组最后一个元素。
+
+> 注意：不能使用 `push` 将新元素附加到字符串
+
+
+
+
 
