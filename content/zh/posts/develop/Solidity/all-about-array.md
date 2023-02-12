@@ -38,4 +38,14 @@ T[][K] 或 T[k][] // 二维 混合长度
 
 但有以下注意点：
 
-* 嵌套
+* 嵌套数组不能有不同的类型
+* 嵌套数组的最大嵌套级别是 15
+
+## 定义数组
+
+1. 针对固定长度： string[4] players_room
+2. 针对动态长度：sring[] have_voted
+3. 二维数组：string[2]\[] crypto_names
+4. 二维数组：string[]\[6] names_A_to_F
+
+它和
