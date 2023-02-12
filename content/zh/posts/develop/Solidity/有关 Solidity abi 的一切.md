@@ -5,6 +5,8 @@ lastmod: 2018-03-03T16:01:23+08:00
 draft: false
 tags: ["blockchain","Solidity"]
 categories: ["develop"]
+authors: 
+- "stoneworld"
 ---
 
 

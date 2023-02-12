@@ -25,6 +25,11 @@ code, kbd, pre, samp {
     font-weight: 600;
     text-transform: none;
 }
+
+.header-subtitle-homepage {
+    text-align: center;
+    font-style: normal;
+}
 /*关于页面图片链接*/
 
 .content img {

@@ -6,7 +6,7 @@ draft: false
 tags: ["images"]
 categories: ["Demos"]
 authors:
-- "Shaform"
+- "stoneworld"
 resources:
 - name: header
   src: 'header.jpg'

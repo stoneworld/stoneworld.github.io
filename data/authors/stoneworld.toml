@@ -1,0 +1,10 @@
+url = "https://github.com/stoneworld"
+
+[name]
+display = "stoneworld"
+
+[image]
+url = "images/logo.jpeg"
+
+[zh]
+description = "Go 开发工程师，喜欢探索新技术，目前在 Web3 行业摸索中。"
