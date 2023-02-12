@@ -71,6 +71,18 @@ function func2(uint[3] _data) {
 }
 ```
 
+请注意，我们不能将固定大小的内存数组分配给动态大小的内存数组。为了说明这一点，这里有一个无法编译的示例。
+
+```js
+function dontCompile() public {  
+    uint[] memory x = [uint(1), 3, 4];  
+}
+// Remix Error:
+/*TypeError: Type uint256[3] memory is not implicitly convertible to expected type uint256[] memory.         
+uint[] memory x = [uint(1), 3, 4];           
+^-------------------------------^*/
+```
+
 ### 函数内部定义的数组
 
 函数内部定义的数组在函数执行完成后会被释放掉，所以在函数内部定义的数组一定要加上关键字 memory，我们可以使用 new 关键字进行创建。
@@ -87,3 +99,8 @@ function memoryArray(uint len) {
     bytes memory y = new bytes(len);
 }
 ```
+
+针对内存数据还有一点是需要注意的：
+
+> 我们不能通过为成员 `.length` 赋值来更改内存数组的大小，当尝试访问当前长度之外的元素时，这不会自动扩容。一旦创建，内存数组的大小是固定的（但是是动态的，因为它取决于运行时参数）。
+
