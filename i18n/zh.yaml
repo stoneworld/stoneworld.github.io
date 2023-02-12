@@ -1,0 +1,8 @@
+- id: words
+  translation: 字
+
+- id: minutes
+  translation: 分钟
+
+- id: comments
+  translation: 评论
