@@ -1,5 +1,5 @@
 ---
-title: "有关 Solidity 数组 的一切"
+title: "有关 Solidity 数组的一切"
 date: 2023-02-12T16:01:23+08:00
 lastmod: 2023-02-12T16:01:23+08:00
 draft: false
@@ -112,7 +112,7 @@ function returnOneDigitNumbers() public pure returns (uint[9] memory) {
 	return [uint(1), 2, 3, 4, 5, 6, 7, 8, 9];  
 }
 
-
+// 返回动态长度的数组
 address[] cryptographer_addresses;  
   
 function addCryptographerAddress(address _address) public {  
@@ -125,6 +125,9 @@ function getAllCryptographersAddresses() public view returns (address[] memory) 
 
 ```
 
+![](/images/Pasted%20image%2020230212220447.png)
+
+
 
 ## 数组的成员函数
 
@@ -135,6 +138,5 @@ function getAllCryptographersAddresses() public view returns (address[] memory) 
 > 注意：不能使用 `push` 将新元素附加到字符串
 
 
-
-
+以上就是数组的全部了。
 
