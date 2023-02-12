@@ -18,7 +18,7 @@ authors:
 
 下面的示例中， T 为元素类型， K 数数组长度。
 
-```
+```js
 // 固定长度
 T[k]
 // 动态长度
@@ -29,7 +29,7 @@ T[]
 
 上面的例子其实是一维数组，多维数组本质上是嵌套数组，在 Solidity 中存在下面三种形式：
 
-```
+```js
 T[k][k] // 二维固定长度
 T[][] // 二维动态长度
 T[][K] 或 T[k][] // 二维 混合长度
@@ -52,4 +52,25 @@ T[][K] 或 T[k][] // 二维 混合长度
 
 对于固定长度的数组是没有 .push 方法的，这一点也需要注意。
 
-### 数组字面常数
+### 数组字面常数（**Arrays literals**）
+
+此种定义方式只能是固定大小的，数组声明中的第一个值必须进行类型转换。如下：
+
+```js
+// Here if k = 5, the array will contain 5 values.  
+T[k] memory array_literal = [type(value_1), value_2, ... , value_k];// example  
+string[3] memory rgb_colours = [string("red"), "green", "blue"];
+
+// 另外一个例子
+function func1() {  
+    func2([uint(1), 2, 3]);
+}
+// memory type array that has a fixed size (uint3)  
+function func2(uint[3] _data) {  
+    // Some code here
+}
+```
+
+### 函数内部定义的数组
+
+函数内部定义的数组在函数执行完成后会被释放掉，所以在函数内部定义的数组一定要加上关键字 memory，
