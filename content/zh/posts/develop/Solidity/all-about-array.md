@@ -76,7 +76,7 @@ function func2(uint[3] _data) {
 函数内部定义的数组在函数执行完成后会被释放掉，所以在函数内部定义的数组一定要加上关键字 memory，我们可以使用 new 关键字进行创建。
 
 ```js
-_function memoryArray(uint len) {  
+function memoryArray(uint len) {  
       
     // memory array of length 7, containing uint  
     // x.length == 7  
@@ -84,6 +84,6 @@ _function memoryArray(uint len) {
       
     // memory array of length `len`, containing  bytes  
     // y.length == len  
-    bytes[] memory y = new bytes(len);
+    bytes memory y = new bytes(len);
 }
 ```
