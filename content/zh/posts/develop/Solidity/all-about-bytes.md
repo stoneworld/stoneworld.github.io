@@ -48,6 +48,17 @@ byte b = 1;
 
 具有固定大小变量的字节可以在合约之间传递。
 
+众所周知，以太坊中的地址是一个 20 字节的值（例如： `0xa59b89aee4f944a04d8fc075967d616b937dd4a7` ）。因此，可以通过下面的方式进行转换。
+```js
+address public my_address;// This function is really expensive the 1st time   
+// it's called (21 000 gas). Why ?  
+function bytesToAddress(bytes20 input) public returns (address) {  
+    my_address = address(input);  
+    return my_address;  
+}
+```
+
+
 ## 动态大小的字节数组
 
 Solidity 中的术语 `bytes` 表示一个动态的字节数组。这是 `byte[]` 的简写，但 `byte[]` 类型是一个字节数组，但是由于填充规则，它为每个元素浪费了 31 个字节的空间（存储空间除外）。最好改用 `bytes` 类型。
