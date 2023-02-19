@@ -62,3 +62,7 @@ function bytesToAddress(bytes20 input) public returns (address) {
 ## 动态大小的字节数组
 
 Solidity 中的术语 `bytes` 表示一个动态的字节数组。这是 `byte[]` 的简写，但 `byte[]` 类型是一个字节数组，但是由于填充规则，它为每个元素浪费了 31 个字节的空间（存储空间除外）。最好改用 `bytes` 类型。
+
+原文链接：https://jeancvllr.medium.com/solidity-tutorial-all-about-bytes-9d88fdb22676
+
+参考：[以太中的位操作和位运算](https://medium.com/@imolfar/bitwise-operations-and-bit-manipulation-in-solidity-ethereum-1751f3d2e216)
