@@ -45,4 +45,10 @@ brew 是 **macOS（或 Linux）缺失的软件包的管理器**
 ![](/images/Pasted%20image%2020230304191918.png)
 
 ![](images/Pasted%20image%2020230304191943.png)
-然后我们可以在 https://civitai.com/ 下载想要的模型，进行图片生成。
+然后我们可以在 https://civitai.com/ 下载想要的模型，导入到进行图片生成，导入路径类似如下：
+
+![](/images/Pasted%20image%2020230304195439.png)
+
+而后重新启动脚本，类似下面的 prompt 复制下，而后点击生成：
+
+> RAW photo, <lora:liuyifei_10:1>, a close up portrait photo of young chinese woman in wastelander clothes, background is city ruins, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3,
