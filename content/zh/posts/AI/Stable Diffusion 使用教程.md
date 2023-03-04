@@ -39,3 +39,9 @@ brew 是 **macOS（或 Linux）缺失的软件包的管理器**
 如果期间出现网络问题或许你需要终端代理，请自行调整，类似如下：
 
 `export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890`
+
+最终完成后结果如下，而后打开划线的地址：
+
+![](/images/Pasted%20image%2020230304191918.png)
+
+![](images/Pasted%20image%2020230304191943.png)
