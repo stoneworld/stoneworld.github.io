@@ -52,9 +52,13 @@ brew 是 **macOS（或 Linux）缺失的软件包的管理器**
 
 而后重新启动脚本，类似下面的 prompt 复制下，而后点击生成：
 
-> RAW photo, <lora:liuyifei_10:1>, a close up portrait photo of young chinese woman in wastelander clothes, background is city ruins, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3
+> (8k, best quality, masterpiece:1.2), (realistic, photo-realistic:1.37), ultra-detailed, 1 girl,cute, solo,beautiful detailed sky,detailed cafe,night,sitting,dating,(nose blush),(smile:1.15),(closed mouth) small breasts,beautiful detailed eyes,(collared shirt:1.1), night, wet,business attire, rain,white lace, (short hair:1.2),floating hair NovaFrogStyle,
+
+
+> paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, (outdoor:1.6), manboobs, backlight,(ugly:1.331), (duplicate:1.331), (morbid:1.21), (mutilated:1.21), (tranny:1.331), mutated hands, (poorly drawn hands:1.331), blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331), (more than 2 nipples:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051), (too many fingers:1.61051), (unclear eyes:1.331), bad hands, missing fingers, extra digit, (futa:1.1), bad body, NG_DeepNegative_V1_75T,pubic hair, glans
+
 
 如果调用过程中存在报错点，可以按照提示进行操作。
 
 生成的图片如下：
-
+![](/images/Pasted%20image%2020230304220634.png)
