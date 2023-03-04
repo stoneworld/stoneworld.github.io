@@ -15,6 +15,7 @@ authors:
 
 brew 是 **macOS（或 Linux）缺失的软件包的管理器**
 将以下命令粘贴至终端：
+
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ### 安装依赖
