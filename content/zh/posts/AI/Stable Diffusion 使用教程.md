@@ -51,4 +51,6 @@ brew 是 **macOS（或 Linux）缺失的软件包的管理器**
 
 而后重新启动脚本，类似下面的 prompt 复制下，而后点击生成：
 
-> RAW photo, <lora:liuyifei_10:1>, a close up portrait photo of young chinese woman in wastelander clothes, background is city ruins, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3,
+> RAW photo, <lora:liuyifei_10:1>, a close up portrait photo of young chinese woman in wastelander clothes, background is city ruins, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3
+
+如果调用过程中存在报错点，可以按照提示进行操作。
