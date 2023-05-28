@@ -11,10 +11,10 @@ categories: ["develop"]
 
 前面几个介绍了常见的整型溢出，浮点数计算 [IEEE754](https://zh.wikipedia.org/zh-hans/IEEE_754) 相关的内容，这些其实和 go 关系不大，这里不再进行赘述了。
 
-## Slice 相关
-### 不理解切片的长度和容量
+## 1. Slice 相关
+### 1.1 不理解切片的长度和容量
 
-### 对 nil 和 empty slices 感到疑惑
+### 1.2 对 nil 和 empty slices 感到疑惑
 
 ```go
 func main() {
@@ -29,12 +29,19 @@ func main() {
     log(3, s)
 
     s = make([]string, 0)
+    log(4, s)
 }
 func log(i int, s []string) {
     fmt.Printf("%d: empty=%t\tnil=%t\n", i, len(s) == 0, s == nil)
 }
 ```
 
+上面的输出结果是：
+
+1: empty=true nil=true
+2: empty=true nil=true
+3: empty=true nil=false
+4: empty=true nil=false
 
 
 
