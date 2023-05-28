@@ -16,6 +16,24 @@ categories: ["develop"]
 
 ### 对 nil 和 empty slices 感到疑惑
 
+```go
+func main() {
+    var s []string
+
+	log(1, s)
+
+    s = []string(nil)
+    log(2, s)
+
+    s = []string{}
+    log(3, s)
+
+    s = make([]string, 0)
+}
+func log(i int, s []string) {
+    fmt.Printf("%d: empty=%t\tnil=%t\n", i, len(s) == 0, s == nil)
+}
+```
 
 
 
