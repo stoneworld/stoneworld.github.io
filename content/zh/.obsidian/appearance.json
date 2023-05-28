@@ -4,5 +4,6 @@
   "theme": "moonstone",
   "monospaceFontFamily": "Monaco",
   "textFontFamily": "LXGW WenKai",
-  "baseFontSize": 12
+  "baseFontSize": 12,
+  "cssTheme": "AnuPpuccin"
 }

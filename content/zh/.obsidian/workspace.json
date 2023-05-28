@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 202.5,
+    "collapsed": true
   },
   "right": {
     "id": "db209fa70cf1d44b",
@@ -93,8 +94,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
-                "collapseAll": false,
+                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/develop/Solidity/有关 Solidity abi 的一切.md"
+                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md"
               }
             }
           }
@@ -156,8 +157,11 @@
   },
   "active": "41ae3fb7537fd4c4",
   "lastOpenFiles": [
-    "posts/develop/Solidity/all-about-bytes.md",
+    "posts/develop/Go/Go_interface.md",
+    "posts/develop/Go/Go_100_mistakes_Data_types.md",
+    "about.md",
     "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+    "posts/develop/Solidity/all-about-bytes.md",
     "images/Pasted image 20230526230659.png",
     "posts/AI/Stable Diffusion 使用教程.md",
     "images/Pasted image 20230304220634.png",
@@ -171,7 +175,6 @@
     "images/Pasted image 20230304180536.png",
     "posts/AI",
     "posts/header-image/index.md",
-    "posts/develop/Go/Go_interface.md",
     "images/Pasted image 20230212220447.png",
     "images/globe.svg",
     "posts/go.md"
