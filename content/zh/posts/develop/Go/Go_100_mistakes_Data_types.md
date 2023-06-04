@@ -170,6 +170,63 @@ func f(s []int) {
 
 
 ### 1.5 切片和内存泄露
+本节将展示在某些情况下，对现有切片或数组进行切片操作可能会导致内存泄漏。我们将讨论两种情况：一种是容量泄漏，另一种与指针有关。
+
+#### 1.5.1 容量泄漏
+对于容量泄漏的情况，让我们想象一下实现一个自定义的二进制协议。一个消息可以包含 100 万字节，其中前 5 个字节表示消息类型。在我们的代码中，我们接收这些消息，并且出于审计目的，我们想要在内存中存储最新的 1,000 个消息类型。以下是我们函数的框架：
+
+```go
+func consumeMessages() {
+    for {
+        msg := receiveMessage()
+        // 处理消息
+        storeMessageType(getMessageType(msg))
+    }
+}
+
+func getMessageType(msg []byte) []byte {
+    return msg[:5]
+}
+```
+
+`getMessageType` 函数通过对输入切片进行切片操作来计算消息类型。我们测试了这个实现，一切正常。然而，当我们部署应用程序时，我们注意到应用程序消耗了大约 1GB 的内存。这是为什么呢？
+
+在使用 `msg[:5]` 对 `msg` 进行切片操作时，会创建一个长度为 5 的切片。然而，它的容量仍然与初始切片相同。剩余的元素仍然在内存中分配，即使最终 `msg` 不再被引用。让我们看一个消息长度为 100 万字节的示例，如下图所示：
+
+![](Pasted%20image%2020230604224309.png)
+
+要解决这个问题，我们可以在获取消息类型时进行切片复制，而不是对 msg 进行切片操作：
+
+```go
+func getMessageType(msg []byte) []byte {
+    msgType := make([]byte, 5)
+    copy(msgType, msg)
+    return msgType
+}
+```
+
+由于我们进行了复制操作，无论收到的消息大小如何，msgType 都是一个长度为 5、容量为 5 的切片。因此，我们每个消息类型只存储了 5 个字节。
+
+那我们是否可以通过完整切片表达式来解决这个问题呢？让我们看一下这个例子：
+
+```go
+func getMessageType(msg []byte) []byte {
+    return msg[:5:5]
+}
+```
+
+在这里，`getMessageType` 返回的是初始切片的缩小版本：一个长度为 5、容量为 5 的切片。但是 GC 能否回收第 5 个字节之后的不可访问空间呢？Go 规范并没有官方指定的行为。然而，通过使用 `runtime.Memstats`，我们可以记录内存分配器的统计信息，比如在堆上分配的字节数：
+
+```go
+func printAlloc() {
+    var m runtime.MemStats
+    runtime.ReadMemStats(&m)
+    fmt.Printf("%d KB\n", m.Alloc/1024)
+}
+```
+
+如果我们在调用 `getMessageType` 后调用这个函数，并使用 `runtime.GC()` 强制进行垃圾回收，那么不可访问的空间不会被回收。整个底层数组仍然存在于内存中。因此，使用完整切片表达式不是一个有效的选项（除非未来的 Go 更新解决了这个问题）。
+
 
 
 ### 1.6
