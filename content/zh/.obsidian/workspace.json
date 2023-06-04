@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5,
-    "collapsed": true
+    "width": 202.5
   },
   "right": {
     "id": "db209fa70cf1d44b",
@@ -158,9 +157,13 @@
   "active": "41ae3fb7537fd4c4",
   "lastOpenFiles": [
     "posts/develop/Go/Go_interface.md",
-    "posts/develop/Go/Go_100_mistakes_Data_types.md",
-    "about.md",
+    "posts/develop/Solidity/all-about-array.md",
     "posts/develop/Solidity/有关 Solidity abi 的一切.md",
+    "posts/develop/Go/Go_100_mistakes_Data_types.md",
+    "未命名.canvas",
+    "未命名 1.canvas",
+    "images/Pasted image 20230604222814.png",
+    "about.md",
     "posts/develop/Solidity/all-about-bytes.md",
     "images/Pasted image 20230526230659.png",
     "posts/AI/Stable Diffusion 使用教程.md",
@@ -170,13 +173,11 @@
     "images/Pasted image 20230304191943.png",
     "images/Pasted image 20230304191918.png",
     "images/Pasted image 20230304180859.png",
-    "posts/develop/Solidity/all-about-array.md",
     "posts/develop/Solidity/Solidity_article.md",
     "images/Pasted image 20230304180536.png",
     "posts/AI",
     "posts/header-image/index.md",
     "images/Pasted image 20230212220447.png",
-    "images/globe.svg",
     "posts/go.md"
   ]
 }
