@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "19f38bc54ad555ed",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md",
+                "file": "about.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md",
+                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/develop/Go/Go_100_mistakes_Data_types.md"
+                "file": "about.md"
               }
             }
           }
@@ -165,15 +154,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "19f38bc54ad555ed",
+  "active": "41ae3fb7537fd4c4",
   "lastOpenFiles": [
+    "posts/develop/Go/Go_100_mistakes_Data_types.md",
     "images/Pasted image 20230604224309.png",
     "images/Pasted image 20230604223241.png",
     "images/Pasted image 20230604223008.png",
     "posts/develop/Go/Go_interface.md",
     "posts/develop/Solidity/all-about-array.md",
     "posts/develop/Solidity/有关 Solidity abi 的一切.md",
-    "posts/develop/Go/Go_100_mistakes_Data_types.md",
     "未命名.canvas",
     "未命名 1.canvas",
     "images/Pasted image 20230604222814.png",
@@ -186,7 +175,6 @@
     "images/Pasted image 20230304195439.png",
     "images/Pasted image 20230304191943.png",
     "images/Pasted image 20230304191918.png",
-    "images/Pasted image 20230304180859.png",
     "posts/develop/Solidity/Solidity_article.md",
     "posts/AI",
     "posts/header-image/index.md",
