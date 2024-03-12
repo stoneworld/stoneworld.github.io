@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "about.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,8 +151,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "41ae3fb7537fd4c4",
+  "active": "78d27214dc5e6221",
   "lastOpenFiles": [
+    "about.md",
     "posts/develop/Go/Go_100_mistakes_Data_types.md",
     "images/Pasted image 20230604224309.png",
     "images/Pasted image 20230604223241.png",
@@ -166,7 +164,6 @@
     "未命名.canvas",
     "未命名 1.canvas",
     "images/Pasted image 20230604222814.png",
-    "about.md",
     "posts/develop/Solidity/all-about-bytes.md",
     "images/Pasted image 20230526230659.png",
     "posts/AI/Stable Diffusion 使用教程.md",
